@@ -1,0 +1,41 @@
+.heading
+{
+    background-color: orchid;
+    color: black;
+    text-align: center;
+    font-size:300%;
+}
+
+.para
+{
+    color: lightcyan;
+    text-align : center;
+    font-size: large;
+
+
+}
+
+main
+{
+    background: #000;
+}
+.headline
+{
+    color: goldenrod;
+    text-align: center;
+    font-size:300%;
+    text-decoration: underline;
+}
+.theading
+{
+    color: goldenrod;
+    font-size:150%;
+}
+
+footer
+{
+    background-color: orchid;
+    color: black;
+    /* text-align: right; */
+    font-size:50%;
+}
