@@ -1,0 +1,16 @@
+.heading
+{
+    color:lightblue;
+    background-color: black;
+    text-align: center;
+}
+.para
+{
+    color:teal;
+    /* background-color: lightgray; */
+    text-align: center;
+    text-shadow: black;
+}
+main{
+    background-color: lightgray;
+}
