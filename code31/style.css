@@ -1,0 +1,84 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector */
+body
+{
+    background-color: black;
+    color: darkgray;
+}
+
+/* Class Selector */
+.hii
+{
+    color: goldenrod;
+}
+.hello
+{
+    color: navy;
+}
+
+/* Id selector */
+#idname
+{
+    color: brown;
+}
+
+/* Selector List */
+.hii,.hello
+{
+    background-color: lightcyan;
+}
+
+/* Descendent Selector  */
+section p
+{
+    color: green;
+    text-align: center;
+}
+
+/* Child Selector */
+main > p 
+{
+    color: cornflowerblue;
+}
+
+/* Adjacent Sibling Selector */
+section + p 
+{
+    color: blueviolet;
+}
+
+/* General Adjacent Sibling Selector */
+main ~ p
+{
+    color: teal;
+}
+
+/* Attribute Selector */
+/* 1 */
+[target="_blank"]
+{
+    color: dodgerblue;
+}
+
+/* 2 */
+[alt~="Photo"]
+{
+    color: crimson;
+}
+
+/* 3 */
+[alt|="Image hai"]
+{
+    color: wheat;
+}
+
+/* 4 */
+[alt^="Picture"]
+{
+    color: sandybrown;
+}
