@@ -1,0 +1,97 @@
+/* Rivision & colors and style*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "Playwrite US Modern", cursive;
+}
+
+body
+{
+            color: #fff;
+            background-color: #000000;
+
+            background-image: url(https://images.pexels.com/photos/33429090/pexels-photo-33429090/free-photo-of-serene-swan-gliding-on-tranquil-blue-lake.jpeg);
+
+            background-size: cover;
+
+            /* background-repeat: no-repeat; */
+
+            background-attachment: fixed;
+
+}
+
+.heading
+{
+    color: #708090;
+    /* background-color: #fff5ee; */
+}
+
+.heading2
+{
+    color: #585818;
+    /* background-color: #696969; */
+}
+
+#idname
+{
+    color: #708090;
+    /* background-color: #190b9d; */
+}
+
+.heading,.heading2
+{
+    text-align: center;
+}
+
+section p
+{
+    color: #ffff00;
+    /* background-color: #dc143c; */
+}
+
+main > h2
+{
+    color: #bc8f8f;
+    /* background-color: #663399; */
+}
+
+section + p
+{
+    color: #1e90ff;
+    /* background-color: #32cd32; */
+}
+
+main ~ h2
+{
+    color: #cd5c5c;
+    /* background-color: #4169e1; */
+} 
+
+[target="_blank"]
+{
+    color: #dc143c;
+}
+
+.bgimg1
+{
+    background-image: url(https://images.pexels.com/photos/29458597/pexels-photo-29458597/free-photo-of-seagull-gliding-over-calm-water-surface.jpeg);
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+}
+
+.bgimg2
+{
+    background-image: url(https://images.pexels.com/photos/17876781/pexels-photo-17876781/free-photo-of-view-of-a-swan-with-spread-wings-swimming-in-the-water-in-pink-sunset-light.jpeg);
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+}
+
+
