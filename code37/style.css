@@ -1,0 +1,104 @@
+*
+{
+    margin : 0;
+    padding: 0;
+    background-image: url(https://images.pexels.com/photos/1103969/pexels-photo-1103969.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-color: #000000; */
+    font-family: "Jim Nightshade", cursive;
+}
+
+
+
+main
+{
+    color: #708090;
+}
+
+.heading1
+{
+    color: #ffdead;
+}
+
+.heading2
+{
+    color: #7fff00;
+}
+
+.heading3
+{
+    color:lightpink;
+    text-align-last: center;
+    text-decoration: underline;
+    text-indent: 300px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    line-height: 100px;
+    font-size: 50px;
+    font-variant: small-caps;
+    font-weight: 1;
+    background-image: url(https://images.pexels.com/photos/30027099/pexels-photo-30027099/free-photo-of-illuminated-beijing-national-stadium-at-night.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.heading4
+{
+    color: #c0c0c0;
+    direction: rtl;
+    text-transform: uppercase;
+}
+
+
+
+#idname
+{
+    color: #a52a2a;
+    text-align: center;
+}
+
+.heading1,.heading2
+{
+    /* margin: 10px; */
+    /* margin: 10px 10px 10px 10px; */
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    padding: 10px;
+
+    border: 2px solid #c0c0c0;
+    width: 185px;
+
+}
+
+[target="_blank"]
+{
+    color: #ee82ee;
+}
+
+section h1
+{
+    color: #4682b4;
+}
+
+section > h1
+{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #ffb6c1;
+    width: 185px;
+}
+
+section + h1
+{
+    color: #00ff7f;
+}
+
+section ~ p
+{
+    color:#4682b4 ;
+}
+
