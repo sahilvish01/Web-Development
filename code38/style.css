@@ -1,0 +1,124 @@
+/* CSS Rivision */
+
+*
+{
+    /* background-color: #000000; */
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+
+
+    font-family: "Poppins", sans-serif;
+
+}
+
+body
+{
+    background-image: url(https://images.pexels.com/photos/33275019/pexels-photo-33275019/free-photo-of-red-panda-resting-on-tree-branch-in-forest.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+p
+{
+    color: #520096;
+    /* text-align: center; */
+    text-align-last: center;
+    direction: rtl;
+    text-decoration: underline;
+    text-transform:capitalize;
+    text-indent: 100px;
+    letter-spacing: 15px;
+    word-spacing: 90px;
+    line-height: 50px;
+    font-size: 25px;
+    font-variant: small-caps;
+    font-weight: 900;
+    
+    width: 585px;
+    margin:auto;
+
+}
+
+
+.heading1
+{
+    color: #b0e0e6;
+}
+
+.heading2
+{
+    color: #0000cd;
+}
+
+
+
+#idname
+{
+    color: #006400;
+}
+
+
+.heading1,.heading2
+{
+    /* text-align: center; */
+
+    /* margin: 100px; */
+
+    /* margin: 100px 0px 100px 585px; */
+
+    /* margin-top: 100px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+    margin-left: 585px; */
+
+    border: 5px solid #6495ed;
+    padding: 100px;
+    width: 120px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+[target="_blank"]
+{
+    color: #ffe4b5;
+}
+
+main h3
+{
+    color: #dda0dd;
+}
+
+section > h3
+{
+    color: #66cdaa;
+}
+
+/* Adjacent Sibling Selector */
+
+section + h3
+{
+    color: #800000;
+}
+
+
+/* General Adjacent Sibling Selector */
+
+section ~ p
+{
+    border-left: 10px solid #000000;
+    border-right: 10px solid #000000;
+
+
+    color: #228b22;
+    background-image: url(https://images.pexels.com/photos/34246132/pexels-photo-34246132/free-photo-of-red-panda-looking-up-in-natural-habitat.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
