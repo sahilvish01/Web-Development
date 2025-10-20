@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .lgrad
+        {
+            height: 500px;
+            border: 2px solid black;
+            background-image: linear-gradient(orange,white,green);
+
+        }
+
+        .lgrad1
+        {
+            height: 500px;
+            border: 2px solid black;
+            /* background-image: linear-gradient(to right,orange,white,green); */
+            background-image: linear-gradient(to top,orange,white,green);
+
+
+        }
+
+
+        .lgrad2
+        {
+            height: 500px;
+            border: 2px solid black;
+            /* background-image: linear-gradient(to right,orange,white,green); */
+            background-image: repeating-linear-gradient(orange 10%,white 10%);
+
+            /* Didn't get it right now*/
+
+
+        }
+
+        .img1
+        {
+            margin-top: 180px ;
+            margin-left: 675px;
+            
+        }
+        .rgrad
+        {
+            height: 500px;
+            border: 2px solid black;
+            background-image: radial-gradient(red,green,black,blue);
+        }
+
+        .rgrad1
+        {
+            height: 500px;
+            border: 2px solid black;
+            background-image: radial-gradient(circle,red,green,black,blue);
+        }
+
+        .rgrad2
+        {
+            height: 500px;
+            border: 2px solid black;
+            background-image: 
+            repeating-radial-gradient(
+                red 10%,
+                green 20%,
+
+                /* Didn't get it right now */
+            );
+        }
+
+        .cgrad
+        {
+            height: 500px;
+            border: 2px solid black;
+            background-image: conic-gradient(red,green,black,blue);
+        }
+
+        .cgrad1
+        {
+            height: 500px;
+            border: 2px solid black;
+            background-image: conic-gradient(red 90deg,green 180deg,black 270deg,blue 360deg);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Gradient -->
+
+    <h1 class="lgrad"><img src="ashoka-chakra-seeklogo.png" alt="Ashok Chakra" height="150px" width="150px" class="img1"></h1>
+
+
+    <h1 class="lgrad1"></h1>
+    <h1 class="lgrad2"></h1>
+
+
+    <h1 class="rgrad"></h1>
+    <h1 class="rgrad1"></h1>
+    <h1 class="rgrad2"></h1>
+
+
+
+    <h1 class="cgrad"></h1>
+    <h1 class="cgrad1"></h1>
+
+    
+    
+</body>
+</html>
