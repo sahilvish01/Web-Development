@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class & Pseudo Elements</title>
+
+    <style>
+
+        button
+        {
+            background-color: #000000; 
+            
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            border: 2px solid #a9a9a9;
+            border-radius: 50%;
+            color:#afeeee;
+            font-size: 15px;
+            
+        }
+        a
+        {
+            color:#afeeee;
+            text-decoration: none;
+            font-size: 15px;
+
+        }
+
+        .forhover:hover
+        {
+            display: inline;
+            background-color: #696969;
+            color:#afeeee;
+
+            
+            
+        }
+
+        input:focus
+        {
+            color: #ffffff;
+            background-color: #000000;
+        }
+
+        .forhover1:active
+        {
+            display: inline;
+            background-color: #696969;
+            color:#ff0000;
+        }
+
+        .visited:visited
+        {
+            color: #696969;
+        }
+
+        p:first-child
+        {
+            color: #f08080;
+        }
+
+        h1:nth-child(even)
+        {
+            color: #ba55d3;
+        }
+
+        h2::first-line
+        {
+            
+            color: #6b8e23;
+        }
+
+        h1::first-letter
+        {
+            
+            color:#f08080;
+
+        }
+
+        h1,h2
+        {
+            text-indent: 100px;
+        }
+
+        h1::after
+        {
+            content: " ~ Sahil Vishwakarma";
+            color: #87cefa;
+        }
+
+        h2::before
+        {
+            content: " ~ Sahil Vishwakarma : ";
+            color: #87cefa;
+        }
+
+
+        h1::selection
+        {
+            color: #fa8072;
+            background-color: #6a5acd;
+        }
+
+        /* h2::shadow - Didn't get it right now */
+
+        
+        
+
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- Pseudo Class & Pseudo Elements -->
+
+
+    <!-- hover -->
+
+    <h1>&nbsp; Come and See Changes &nbsp;</h1>
+
+    <button title="instagram" class="forhover"><a href="https://www.instagram.com/itz_sahil_1919/?__pwa=1" target="_blank"><b>Click Here</b></a></button>
+
+    <a href="https://www.instagram.com/itz_sahil_1919/?__pwa=1" target="_blank" class="visited">instagram</a>
+
+    <!-- visited : Didn't get it right now -->
+
+    <br>
+    <br>
+
+
+    <!-- Focus -->
+     <label for="idname">Enter Name : </label>
+
+     <input type="text" id="idname" name="name" autofocus/>
+     <br>
+     <br>
+
+     <label for="idDOB">Enter DOB : </label>
+
+     <input type="date" id="idDOB" name="DOB"/>
+
+     <br>
+     <br>
+
+     <label for="idPhone">Enter Phone : </label>
+
+     <input type="number" id="idPhone" name="Phone">
+
+     <!-- active : Didn't get it right now-->
+
+
+     <!-- first Child -->
+
+     <section>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+     </section>
+
+     <section>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+        <h1>lorem</h1>
+     </section>
+
+
+     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus distinctio aut similique est quisquam, sed laboriosam facilis eaque accusamus odio non perferendis tempora repudiandae amet corrupti illum soluta totam iste magnam. Laudantium perferendis qui temporibus aperiam expedita. Porro natus culpa dolorum tenetur impedit minus quos iure? Id officia labore illum.</h2>
+
+
+     <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+</body>
+</html>
