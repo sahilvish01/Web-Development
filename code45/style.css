@@ -1,0 +1,151 @@
+/* div
+{
+    width: 100px;
+    height: 100px;
+    background-color: #4169e1;
+} */
+
+/* h1
+{
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    
+
+} */
+
+
+
+
+
+
+
+
+div
+{
+
+    width: 100px;
+    height: 100px;
+    background-color: #4169e1;
+    /* border: 2px solid #000000; */
+    /* margin-bottom: 5px; */
+    position:relative;
+    /* animation-name: colorchange;
+    animation-duration: 10s;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-delay: 2s;
+    animation-fill-mode: both; */ 
+
+    animation : colorchange 10s ease 2s infinite normal both;
+
+
+
+}
+
+#ease
+{
+    animation-timing-function: ease;
+}
+
+#linear
+{
+    animation-timing-function: linear;
+
+}
+
+#easein
+{
+    animation-timing-function: ease-in;
+}
+
+#easeout
+{
+    animation-timing-function: ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @keyframes colorchange
+{
+
+    from
+    {
+        background-color: #ffdead;
+        top: 0px;
+        left: 0px;
+
+    }
+
+    to
+    {
+        background-color: #f08080;
+        top: 0px;
+        left: 1320px;
+    }
+
+
+} */
+
+
+
+
+
+@keyframes colorchange
+{
+
+    0%
+    {
+        background-color: #ffdead;
+        top: 0px;
+        left: 0px;
+
+    }
+
+    25%
+    {
+        background-color: #f08080;
+        top: 0px;
+        left: 1320px;
+        rotate: 60deg;
+    }
+
+    50%
+    {
+        background-color: #00ff7f;
+        top: 160px;
+        left: 1320px;
+        rotate: 0deg;
+
+    }
+
+    75%
+    {
+        background-color: #808080;
+        top: 160px;
+        left: 0px;
+        rotate: -60deg;
+        
+
+    }
+
+    100%
+    {
+        background-color: #6a0000;
+        top: 0px;
+        left: 0px;
+    }
+
+
+}
