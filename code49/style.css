@@ -1,0 +1,98 @@
+body
+{
+    font-family: "Poppins", sans-serif;
+
+    /* font-family: "Poppins", sans-serif; */
+    background-image: url(batman.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.boxmodel
+{
+    font-family: "Metal Mania", system-ui;
+    border: 10px solid #808080;
+    padding-right:auto;
+    width: 1000px;
+    padding: 100px;
+    /* margin: 100px; */
+    /* color:#f0ffff; */
+    text-align: center;
+    
+    
+
+    
+}
+
+.superman
+{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color:#ff0000;
+    letter-spacing: 5px;
+    text-decoration:line-through;
+    text-align:end;
+    text-align: center;
+
+
+}
+.batman
+{
+    margin-top: 0px;
+    margin-bottom: 100px;
+    padding-top: 0px;
+    color: #d3d3d3;
+    letter-spacing: 5px;
+    font-size: 200px;
+    text-decoration:underline;
+}
+
+
+.style
+{
+    color:#ffe4e1;
+    font-size: 50px;
+    text-align: justify;
+    text-align-last: center;
+    /* direction:rtl; */
+    text-transform:capitalize;
+    text-indent: 250px;
+    line-height: 100px;
+    font-variant: small-caps;
+    /* font-weight: 900; */
+    border: 5px solid #ffffff;
+    /* width: 1500px; */
+    /* height: 1000px; */
+
+    max-height: 1000px;
+    max-width: 1500px;
+    overflow: scroll;
+
+}
+
+.dis1
+{
+    color: #f0f8ff;
+    display: inline;
+    border: 2px solid #ffffff;
+    width: 500px;
+
+}
+
+.dis2
+{
+    color: #f0f8ff;
+    display: block;
+}
+
+.dis3
+{
+    color: #f0f8ff;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    padding-top:  250px;;
+}
