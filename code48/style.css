@@ -1,0 +1,87 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-image: url(wp12247973-call-of-duty-ghost-4k-wallpapers.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+main
+{
+    color: #ffefd5;
+    text-align: center;
+    text-decoration: overline;
+    text-decoration: line-through;
+}
+
+.classname
+{
+    color: #4169e1;
+    margin-left: 40%;
+}
+
+#idname
+{
+    padding: 50px 50px 50px 50px;
+    margin: 50px 50px 50px 50px;
+    border: 20px solid #000000;
+    display: inline;
+}
+
+.class1.class2
+{
+    background-color: chocolate;
+}
+
+section p{
+    color: #fff5ee;
+    display: inline;
+    border: 2px solid #000000;
+    border-radius: 80%;
+    padding: 100px 100px 100px 100px;
+    background-color:darkred;
+    
+}
+
+section > h1{
+    color: #ffc0cb;
+    background-color: #000;
+    border: 5px solid #808080;
+    display: inline;
+}
+
+section + p{
+    color: #ffffff;
+    background-color: #000000;
+    border: 2px solid black;
+    border-radius: 70%;
+    margin: 100px 100px 100px 100px;
+    padding: 100px 100px 100px 100px;
+
+    display: inline;
+}
+
+section ~ p
+{
+    background-image: url(Gemini_Generated_Image_zes9cwzes9cwzes9\ \(1\).png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #000;
+    background-color: #f4a460;
+    border: 2px solid #000000;
+    border-radius: 70%;
+    margin: 100px 100px 100px 100px;
+    padding: 100px 100px 100px 100px;
+
+    /* display: inline; */
+}
+
+
