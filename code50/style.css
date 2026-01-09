@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+
+
+.parent
+{
+    background-color: #000;
+    width: 100svw;
+    height: 100svh;
+    border: 2px solid black;
+}
+
+.child
+{
+    /* text-align: center; */
+    /* margin-right: 25svw; */
+    width: 50svw;
+    height: 50svh;
+    background-color: #ff0000;
+    box-shadow: 50px 50px #ffffff;
+}
