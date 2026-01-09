@@ -1,0 +1,45 @@
+
+
+.container
+{
+    height: 100px;
+    border: 2px solid #000000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* overflow-x: scroll; */
+
+}
+
+.facebook
+{
+    background-color:lightslategrey;
+    font-size: 16px;
+    color: snow;
+    align-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border: 2px solid #000000;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+}
+
+.amazon
+{
+
+}
+
+.netflix
+{
+
+
+}
+
+.google
+{
+
+}
