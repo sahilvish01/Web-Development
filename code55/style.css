@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+
+body
+{
+    /* background-color: #000000; */
+    background-image: url(https://images.pexels.com/photos/35408504/pexels-photo-35408504/free-photo-of-monochrome-view-of-victoria-memorial-in-kolkata.jpeg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* display: flex; */
+}
+
+.heading
+{
+    background-color: #d3d3d3;
+    text-align: center;
+    font-size: 4.5rem;
+    height: 10svh;
+}
+
+.navparent
+{
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    height: 4svh;
+
+}
+
+.navlogo
+{
+    /* border: 2px solid black; */
+    padding: 0px 0px 10px 10px;
+    /* background-image: url(account_circle_100dp_000000_FILL0_wght400_GRAD0_opsz48.png);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
+    /* color: #000000; */
+     
+}
+
+.navitems
+{
+    display: flex;
+    flex-basis: 250px;
+    justify-content: space-evenly;
+}
+
+.grandparent
+{
+    width: 100svw;
+    height: 78svh;
+    /* background-color: #fff; */
+    border: 2px dashed #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.divparent
+{
+    /* background-color: #fff; */
+    height: 80%;
+    width: 80%;
+    display: flex;
+    /* margin-top: 4.5%;  */
+    border: 2px dashed #000000; 
+    border-radius: 5%;  
+    /* border-right-bottom-radius: 5%; */
+    /* border-end-end-radius: 5%;
+    border-start-end-radius: 5%;
+    border-end-start-radius: 5%; */
+}
+
+.divchild1
+{
+    /* background-color: #000; */
+    height: 50%;
+    width: 50%;
+    color:#000000;
+    /* text-align: center; */
+    text-align: justify;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 15%;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    text-align-last: center;
+}
+
+.divchild2
+{
+    /* background-color: #000; */
+    height: 50%;
+    width: 50%;
+    align-self: flex-end;
+    color:#000000;
+    /* text-align: center; */
+    text-align: justify;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 15%;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    text-align-last: center;
+
+
+}
+
+.footparent
+{
+    background-color: #d3d3d3;
+    height: 8svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+
