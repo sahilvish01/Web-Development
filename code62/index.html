@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Assignment 2</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+
+            box-sizing: border-box;
+        }
+        .grandparent
+        {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            height: 10svh;
+            padding-left: .5svw;
+            padding-right: .5svw;
+        }
+
+        .parent div:first-child
+        {
+            text-transform: capitalize;
+            font-variant: small-caps;
+            font-weight:900;
+            font-size: 1.5rem;
+        }
+
+        .parent
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+           
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="grandparent">
+       
+        <div style="background-color: aqua; width: 50px; height: 50px;">Profile Image</div>
+            
+        
+        <div class="parent">
+                <div>Amit Sharma</div>
+                <div>@amitcodes</div>
+        </div>
+        <button>Follow</button>
+    </div>
+
+</body>
+</html>
