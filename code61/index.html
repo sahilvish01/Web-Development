@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Assignment 1</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+            box-sizing: border-box;
+
+            
+        }
+        .grandparent
+        {
+            background-color: #000000;
+            color: #ffffff;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4svw;
+        }
+        .parent
+        {
+            /* color: #ffffff; */
+            display: flex;
+            /* border: 2px solid #ffffff; */
+            /* width: 150px;
+            height: 20px; */
+            padding: 0;
+
+            gap: 10px;
+            
+
+        }
+
+        .parent a{
+
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="grandparent">
+        <h2>Logo</h2>
+        <div class="parent">
+
+            <a href="home">Home</a>
+            <a href="about">About</a>
+            <a href="contact">Contact</a>
+
+        </div>
+        <div>
+            <button>login</button>
+            <button>Signup</button>
+        </div>
+    </nav>
+
+</body>
+</html>
