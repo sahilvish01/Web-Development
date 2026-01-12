@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Assignment 1</title>
+    <style>
+        .parent{
+            
+            max-width: 200px;
+            max-height: 600px;
+            border: 5px solid #000000;
+            text-align: center;
+        }
+
+        .parent ul
+        {
+            padding: 0px;
+        }
+
+
+        .parent ul li
+        {
+            border: 1px solid #000000;
+            
+        }
+        .parent ul li:first-child{
+
+            border-top: 5px solid #000000;
+
+            
+        }
+        .parent ul li:last-child{
+
+            border-bottom: none;
+
+            
+        }
+
+        .parent ul li:nth-child(even)
+        {
+            
+            background-color: #808080;
+        }
+
+        .parent button 
+        {
+            background-color: #adff2f;
+        }
+
+        .parent:hover button
+        {
+            background-color:#d2691e;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    
+    <h1 style="font-size: 2rem; font-variant: small-caps; text-decoration: underline;">Assignment 1</h1>
+    <div class="parent">
+        <h2>Title</h2>
+        <ul type="none" >
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+            <li>list 5</li>
+            <li>list 6</li>
+        </ul>
+        <button>Click Here</button>
+    </div>
+
+</body>
+</html>
