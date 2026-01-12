@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Assignment 1</title>
+
+    <style>
+        a::after
+        {
+            content: " | ";
+            color: #808080;
+        }
+        nav a:last-child::after
+        {
+            content: "";
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="google.com">google</a>
+        <a href="amazon.com">amzon</a>
+        <a href="flip.com">flip</a>
+        <a href="abc.com">abc</a>
+    </nav>
+    
+</body>
+</html>
