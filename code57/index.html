@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Assignment 2</title>
+
+    <style>
+        .parent
+        {
+            text-align: center;           
+        }
+
+        .parent input:focus
+        {
+            outline: none;
+           border-color: #007bff;
+
+            box-shadow: 0 0 8px #0000ff;
+
+        }
+
+        /* .parent input:nth-child(11)
+        {
+            background-color: #d0e7a0;
+        }
+
+        .parent input:nth-child(3):user-valid
+        {
+            background-color: #78c670;
+        }
+
+        .parent input:nth-child(3):user-invalid
+        {
+            background-color: #ff00007a;
+        }
+
+        .parent input:nth-child(7):user-valid
+        {
+            background-color: #78c670;
+        }
+
+        .parent input:nth-child(7):user-invalid
+        {
+            background-color: #ff00007a;
+        } */
+
+
+        .parent input:required:user-valid
+        {
+            background-color: #78c670;
+        }
+
+        .parent input:required:user-invalid
+        {
+            background-color: #ff00007a;
+        }
+
+        .parent input:optional:not([type="submit"])
+        {
+            background-color: #d0e7a0;;
+        }
+
+        section
+        {
+            height: 50svh;
+            width: 100svw;
+            border: 2px solid #000000;
+            /* background-color: #000000; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div
+        {
+            height: 100px;
+            width: 100px;
+            background-color:#000000;
+            
+        }
+
+        div:hover
+        {
+            box-shadow: 20px 20px 8px #0000ff;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <fieldset class="parent">
+            <legend style="font-size: 2rem; text-transform: capitalize; font-variant: small-caps;">Assignment 2</legend>
+
+            <label for="name">Username : </label>
+            <input type="text" id="name" name="name" pattern="[a-zA-z ]+" required>
+
+            <br><br>
+
+            <label for="Email">Email : </label>
+            <input type="email" name="Email" id="Email" required>
+
+            <br><br>
+
+            <label for="refcode">Referral Code : </label>
+            <input type="text" name="refcode" id="refcode">
+
+            <br><br>
+
+            <!-- <input type="submit"> -->
+
+            <button type="submit">Register</button>
+        </fieldset>
+    </form>
+
+
+    <section>
+        <div></div>
+    </section>
+
+
+
+</body>
+</html>
