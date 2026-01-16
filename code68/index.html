@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+
+            box-sizing: border-box;
+        }
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: black;
+
+        }
+        .parent
+        {
+            width:100%;
+            height: 100svh;
+            border: 2px solid black;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            background-image: url(Gemini_Generated_Image_hm5bohhm5bohhm5b.png);
+            transition: 99999999s;
+
+            background-size: cover;
+        }
+
+        .child
+        {
+            height: 50px;
+            width: 150px;
+            background-color: green;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            font-variant: small-caps;
+            font-weight: 900;
+            color: white;
+            border: 1px solid black;
+            box-shadow: 0px 0px 15px gray;
+            
+        }
+
+        .parent:has(.child:hover)
+        {
+            background-image: url(Gemini_Generated_Image_cqdutxcqdutxcqdu.png);
+            transition-duration: 0s;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">Click Here</div>
+    </div>
+</body>
+</html>
