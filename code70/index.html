@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr; */
+
+            grid-template-areas: "nav nav nav"
+                                    "main section section"
+                                    "footer footer footer";
+
+            grid-template-rows: 50px auto 50px;
+
+            
+            height: 100svh;
+            width: 100svw;
+
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+
+        .box
+        {
+            /* height: 100px;
+            width: 100px; */
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .box1
+        {
+            background-color: gray;
+            /* grid-row: 1/2;
+            grid-column: 1/2; */
+            /* z-index: 1; */
+            grid-area: nav;
+
+        }
+
+        .box2
+        {
+            background-color:darkorange;
+            grid-area: section;
+            display: grid;
+
+            grid-template-rows: [Pahla]1fr [Dusra]1fr [Teesra]1fr[Chautha];
+            grid-template-columns: [Panchwa]1fr [Chhatwa]1fr [Saatva]1fr [Aathwa];
+
+            /* justify-items: center;
+            align-items: center; */
+
+            
+        }
+
+        .box3
+        {
+            background-color:skyblue;
+            grid-area: main; 
+        }
+
+        .box4
+        {
+            background-color:steelblue;
+            grid-area: footer;
+        }
+
+        .box5
+        {
+            background-color:dodgerblue;
+            /* grid-row: 1/2;
+            grid-column: 1/2; */
+        }
+
+        .child
+        {
+            /* height: 100%;
+            width: 100%; */
+            
+        }
+
+        .child1
+        {
+            
+            background-color: red;
+            
+        }
+
+        .child2
+        {
+            background-color: green;
+        }
+
+        .child3
+        {
+            background-color: blue;
+        }
+
+        .child4
+        {
+            background-color:saddlebrown;
+
+            grid-row: Teesra/Chautha;
+            grid-column: Panchwa/Aathwa;
+        }
+
+        .box2::after
+        {
+            /* content: '2'; */
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="box box1"> 1 </div>
+    <div class="box box2"> 
+    
+        <div class="child child1"></div>
+        <div class="child child2"></div>
+        <div class="child child3"></div>
+
+        <div class="child child4"></div>
+        
+    </div>
+    <div class="box box3"> 3 </div>
+    <div class="box box4"> 4 </div>
+    <!-- <div class="box box5"> 5 </div> -->
+    
+</body>
+</html>
