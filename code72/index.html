@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+
+
+    <style>
+
+        .parent
+        {
+            /* width: 50svw; */
+            height: 50svh;
+
+            background-color:springgreen ;
+            display: flex;
+            border:2px solid black;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child
+        {
+            width: 100px;
+            height: 50px;
+
+            border: 1px solid black;
+            border-radius: 50px;
+            background-color: salmon;
+        }
+
+        /* .child:hover
+        {
+            background-color:pink;
+            position: relative;
+            bottom: 2px;
+            right: 2px;
+            box-shadow: 2px 2px 8px blue;
+            transition: 500ms;
+        } */
+
+        /* .child:focus
+        {
+            background-color:pink;
+            position: relative;
+            bottom: 2px;
+            right: 2px;
+            box-shadow: 2px 2px 8px blue;
+            transition: 500ms;
+        } */
+
+        .child:link
+        {
+            background-color:pink;
+            position: relative;
+            bottom: 2px;
+            right: 2px;
+            box-shadow: 2px 2px 8px blue;
+            transition: 500ms;
+        }
+
+        .child:active
+        {
+            background-color:gray;
+            position: relative;
+            top: 2px;
+            left: 2px;
+            box-shadow: 0px 0px 8px blue;
+            transition: 500ms;
+
+            
+        }
+
+        .nparent{
+
+            height: 50svh;
+
+            background-color:springgreen ;
+            display: flex;
+            border:2px solid black;
+
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .nchild
+        {
+            width: 100px;
+            height: 50px;
+
+            border: 1px solid black;
+            border-radius: 50px;
+            background-color: salmon;
+        }
+
+        .nparent .nchild:first-child
+        {
+            background-color: gray;
+        }
+
+        .nparent .nchild:last-child
+        {
+            background-color:skyblue ;
+        }
+        
+        .nparent .nchild:nth-child(3)
+        {
+            background-color:teal;
+        }
+
+        .nparent .nchild:nth-child(even)
+        {
+            background-color:gold;
+        }
+        
+        .parent div:not(.nchild)
+        {
+            background-color: black;
+        }
+
+        .nparent .nchild:nth-child(3):hover
+        {
+            position: relative;
+            bottom: 2px;
+            right: 2px;
+
+            box-shadow: 2px 2px 5px thistle;
+
+            background-color: paleturquoise;
+            transition: 500ms;
+        }
+
+        .nparent:has(.nchild:nth-child(3):hover)
+        {
+            background-color: black;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <div class="parent">
+        <!-- <input type="text" class="child"></input> -->
+        <!-- <a href="google.com" class="child"></a> -->
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="nchild"></div>
+        <div class="nchild"></div>
+        <div class="nchild"></div>
+        
+    </div>
+
+    <div class="nparent">
+         
+        <div class="nchild"></div>
+        <div class="nchild"></div>
+        <div class="nchild"></div>
+        <div class="nchild"></div>
+        <div class="nchild"></div>
+
+    </div>
+
+</body>
+</html>
