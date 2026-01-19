@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <style>
+
+        .Element
+        {
+            font-size: 3rem;
+        }
+
+        .Element::after
+        {
+            
+            content: 'New';
+            font-size: 1.5rem;
+            vertical-align: center;
+            background-color: red;
+            border-radius: 5px;
+            
+        }
+
+        .Element::before
+        {
+            content: 'Start';
+            font-size: 1.5rem;
+            /* text-align: center;
+            vertical-align: center; */
+            background-color: rgb(68, 255, 0);
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <p class="Element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eveniet illum aliquid pariatur consequatur necessitatibus corrupti, ut iusto architecto alias quis mollitia ullam enim sint, doloremque fuga esse ipsam modi?</p>
+
+</body>
+</html>
