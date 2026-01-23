@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Overflow and Z-index</title>
+
+    <style>
+
+        div{
+            height: 200px;
+            width: 200px;
+
+        }
+
+        .parent
+        {
+            width: 1000px;
+
+            height: 800px;
+
+            position: relative;
+
+            /* background-color: #000; */
+            border: 2px solid;
+        }
+
+        .target1
+        {
+            background-color: tan;
+            overflow:auto;
+            position: absolute;
+
+            top: 50px;
+            left:50px;
+
+            z-index: 2;
+            
+        }
+
+        .target2
+        {
+            background-color: tomato;
+            position: absolute;
+
+            top: 100px;
+            left:100px;
+
+            z-index: 1;
+
+        }
+
+        .target3
+        {
+            background-color: steelblue;
+
+            position: absolute;
+
+            top: 150px;
+            left: 150px;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="target1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vitae, praesentium fugiat cumque quaerat molestiae corrupti corporis sunt natus ut ipsa, aut enim nesciunt ipsam error. Porro optio vitae nobis, facere eveniet ducimus natus nihil provident numquam cupiditate, architecto dignissimos temporibus consequatur. Qui neque, veritatis rem praesentium sint iste odit quisquam minima dolorem nihil harum aperiam architecto est beatae, voluptates pariatur totam ipsum necessitatibus. Aperiam voluptate est iusto atque nam voluptatibus ipsa quae vel quidem, magni, provident minus enim sed soluta totam doloribus, ipsam explicabo ut consequuntur blanditiis obcaecati ab ducimus quo. Maxime voluptates eum, perspiciatis adipisci, culpa laboriosam animi deleniti inventore, mollitia commodi aspernatur aperiam repellendus praesentium excepturi eveniet quia quibusdam esse officiis rem nulla a explicabo. Hic ullam numquam, suscipit consequatur inventore vitae aliquid nobis quisquam. Laboriosam, quos quaerat quo iste a sequi nesciunt reprehenderit provident nemo obcaecati unde repellat incidunt, accusamus id eum. Voluptate eveniet blanditiis esse! Numquam beatae facere minus ab quia repudiandae vitae, eius asperiores! Praesentium placeat incidunt commodi culpa sequi facilis fugiat minima adipisci nemo nam voluptatum maiores inventore dignissimos accusamus exercitationem, facere pariatur, aperiam neque labore, nulla repellendus! Ducimus.</div>
+        <div class="target2"></div>
+        <div class="target3"></div>
+    </div>
+
+</body>
+</html>
