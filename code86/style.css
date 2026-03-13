@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    background-image: url(https://images.pexels.com/photos/35536539/pexels-photo-35536539/free-photo-of-colorful-koi-fish-swimming-in-a-tranquil-pond.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.classname1
+{
+    text-align :center;
+}
+
+#idname
+{
+    text-align : right;
+}
+
+.classname2
+{
+    color: rebeccapurple;
+}
+
+.classname1.classname2
+{
+    background-color: red;
+}
+
+main h2
+{
+    background-color: gray;
+}
+
+main > h2
+{
+    color: violet;
+}
+
+main ~ h2
+{
+    color: olive;
+}
+
+main + h2
+{
+    color: royalblue;
+}
+
+.mp
+{
+    display: inline-block;
+    /* height: 500px;
+    width: 500px; */
+    background-color: darkblue;
+    margin: 50px 20px 100px 30px;
+    /* margin: auto; */
+    padding: 50px 100px 100px 50px;
+    border: 2px solid white;
+}
+
+.mp > div 
+{
+    background-color: red;
+    height:200px;
+    width: 200px;
+
+
+}
+
+.mp + p
+{
+    color: fuchsia;
+    text-align-last: center;
+    direction:rtl;
+    text-decoration: line-through;
+    text-transform:capitalize;
+    text-indent: 500px;
+    letter-spacing: 10px;
+    word-spacing: 50px;
+    line-height: 50px;
+    font-size:smaller;
+    font-variant: small-caps;
+    font-weight: 100;
+}
+
+.display1
+{
+    height: 100px;
+    background-color: black;
+    /* display: inline-block; */
+}
+
+.display2
+{
+    height: 100px;
+    background-color: green;
+    /* display: inline; */
+    display: inline-block;
+    /* display:hidden; */
+    /* display: none; */
+    font-size: 5rem;
+}
+
+
+.parent
+{
+    background-color: gray;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* column-gap: 50px;
+    row-gap: 50px; */
+
+    gap: 50px;
+    /* flex-direction:row-reverse; */
+    
+
+}
+
+.child
+{
+    height: 300px;
+    width: 300px;
+    
+}
+
+.child1
+{
+    background-color: red;
+    flex-shrink: 2;
+    /* By default 1 */
+}
+
+.child2
+{
+    background-color: green;
+    align-self: flex-end;
+
+}
+
+.child3
+{
+    background-color: blue;
+    flex-grow: 1;
+
+    /* By default 0 */
+}
+
+.child3:hover
+{
+    background-color: black;
+}
+#demo:focus
+{
+    background-color: green;
+    color: white;
+}
+
+.link:link
+{
+    color: cyan;
+    text-decoration: none;
+    border: 2px solid cyan;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.link:visited
+{
+    color: black;
+}
+
+.link:active
+{
+    color: red;
+}
+
+.parent .child:first-child
+{
+    color:tomato;
+}
+
+.parent .child:last-child
+{
+    color: springgreen;
+}
+
+.parent .child:nth-child(even)
+{
+    color: red;
+}
+
+.parent:has(.child1:hover)
+{
+    background-color: #fff;
+}
+
+.parent::after
+{
+    content: 'new';
+    color: rebeccapurple;
+}
+
+.parent::before
+{
+    content: 'before new';
+    color: darkslategray;
+}
