@@ -1,0 +1,22 @@
+:root
+{
+    --bgc : black;
+    --primary : lightgray;
+    --content : red;
+    
+}
+
+body
+{
+    background-color: var(--bgc,red);
+}
+
+.primary
+{
+    background-color: var(--primary,blue);
+
+    color: var(--content,yellow);
+
+    font-size: 2rem;
+}
+
