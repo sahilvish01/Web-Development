@@ -1,0 +1,53 @@
+*
+{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: grid;
+
+    height: 100svh;
+    width: 100svw;
+
+    grid-template-areas: "nav nav nav"
+                         "section section right"
+                         "about about about"
+                         "footer footer footer";
+                         
+}
+
+.child1
+{
+    background-color: cadetblue;
+    grid-area: nav;
+    
+
+}
+
+.child2
+{
+    background-color: rosybrown;
+    grid-area: section;
+
+}
+
+.child4
+{
+    background-color: teal;
+    grid-area: right;
+}
+
+.child3
+{
+    background-color: gray;
+    grid-area: footer;
+}
+
+.child5
+{
+    background-color: skyblue;
+    grid-area: about;
+}
