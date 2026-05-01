@@ -51,7 +51,7 @@ console.log(obj1);
     // 2. Subscript Operator 
     console.log(obj1["key1"]);      // Double Quotes lagate hai iske liye 
     
-    let key4;
+    let key4 = "key4";
     
     obj1[key4]= "Bye Bye";
 
@@ -152,3 +152,61 @@ console.log(obj6);
 // Jo bhi same name ka attribute hai un sab ko overrite kar dega jo bhi sabse end mein assingned hoga uss value se
 
 console.log(obj6[key4]);
+
+
+// Array of Objects 
+
+let arr = [
+    {
+        key1 : "Hello1",
+        key2 : "Hii1"
+    },
+
+    {
+        key1 : "Hello2",
+        key2 : "Hii2"
+    },
+
+    {
+        key1 : "Hello3",
+        key2 : "Hii3"
+    }
+]
+
+for(let i of arr)       // For array
+{ 
+    for(let j in i)     // For object
+    {
+        console.log(j); 
+    }
+}
+
+// Accessing the elements
+
+console.log(arr[0].key1);
+console.log(arr[2].key2);
+
+
+// Objects ki Saari keys ka array banane ke liye 
+
+let arr10 = Object.keys(obj1);
+
+console.log(arr10);     // Symbol will not be consider 
+                        // key4 baad mein insert hua isliye voh undefined show ho raha hai
+
+console.log(typeof arr10);
+
+// Object ki saari values ka array banane ke liye
+
+let arr11 = Object.values(obj1);
+
+console.log(arr11);
+
+// Object ki saari key value pairs ka array -> 2D Array 
+
+let arr12 = Object.entries(obj1);
+
+console.log(arr12);
+
+// Check karne ke liye ki array mein key exist karti hai ya nahi
+console.log(obj1.hasOwnProperty(key4));
