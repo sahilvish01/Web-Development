@@ -1,0 +1,19 @@
+
+{
+    "Me" :  {
+                "Name" : "Sahil",
+                "Marks" : 100
+            },
+
+    "MeandMyFriend" :   [
+                            {
+                                "Name" : "Sahil",
+                                "Marks" : 100
+                            },
+
+                            {
+                                "Name" : "Keshav",
+                                "Marks" : 100
+                            }
+                        ]
+}
