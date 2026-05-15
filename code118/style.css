@@ -1,0 +1,132 @@
+/* CSS RIVISION PART-2 */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    transition-duration: 1s;
+}
+
+.hover
+{
+    height: 250px;
+    width: 250px;
+    background-color:mediumorchid;
+}
+
+.hover:hover
+{
+    background: lightblue;
+}
+
+.input
+{
+    border: 2px solid;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px;
+    color: #000;
+}
+
+.input:focus
+{
+    background-color: cadetblue;
+}
+
+.googlelink
+{
+    display: inline-block;
+    border: 2px solid;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    background-color: lightslategray;
+}
+
+.googlelink:visited
+{
+    background-color: red;
+}
+
+.googlelink:active
+{
+    background-color: yellow;
+}
+
+.parent1
+{
+    height: 250px;
+    width: 250px;
+    background-color: darkcyan;
+    position: relative;
+    border: 2px solid;
+    
+}
+
+.child1
+{
+    height: 50px;
+    width: 200px;
+    background-color:darkgrey;
+    border: 2px solid;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    text-align: center;
+    padding: 12px;
+}
+
+.parent1:has(.child1:hover)
+{
+    background-color:tomato;
+    transition-duration: 500ms;
+    
+}
+
+.transitionprc
+{
+    height: 250px;
+    width: 250px;
+    background-color:slategray;
+    transition-duration: 2s;
+    transition-delay: 2s;
+
+}
+
+.transitionprc:hover
+{
+    width: 700px;
+
+    transition-duration: 2s;
+    transition-timing-function: steps(5);
+}
+
+.tramsformprc
+{
+    background-color: cadetblue;
+    height: 250px;
+    width: 250px;
+
+    /* transform: rotate(45deg);
+
+    transform: scale(3); */
+
+    /* transform: scaleX(4); */
+
+    /* transform: scale(4,-2); */
+
+    /* transform: translate(100px, -150px); */
+
+    transform: skew(-20deg);
+
+}
