@@ -1,0 +1,69 @@
+/* CSS POSITIONS RIVISION */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.static
+{
+    height: 250px;
+    width: 250px;
+    background-color:aqua;
+    position: static;
+    /* top: 10px;
+    left: 10px; */
+
+    /* Cannot allow */
+}
+
+.relative
+{
+    height: 500px;
+    width: 500px;
+    background-color:aquamarine;
+
+    position: relative;
+    left: 50px;
+    top: 50px;
+    z-index: 1;
+}
+
+.absolute
+{
+    height: 250px;
+    width: 250px;
+    background-color:beige;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.fixed
+{
+    height: 250px;
+    width: 250px;
+    background-color: slategrey;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.sticky
+{
+    height: 250px;
+    width: 250px;
+    background-color: darkcyan;
+    position: sticky;
+    top: 50px;
+}
+
+.Demo
+{
+    height: 1000px;
+    background-color:indianred;
+}
