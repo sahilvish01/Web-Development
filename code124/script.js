@@ -55,4 +55,3 @@ console.log(inner.innerText);       // Only its own text and avoid other tags in
 console.log(inner.innerHTML);       // Show text and tags that is inside it 
 
 console.log(inner.textContent);     // Show own text and also the text of the tags that is used inside it and ignore the tagname
-
