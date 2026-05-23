@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JavaScript</title>
+
+    <style>
+        .btn
+        {
+            background-color: gray;
+            height: 100px;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .grandparent
+        {
+            height: 400px;
+            width: 400px;
+            margin: 10px;
+
+            background-color: darkcyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent
+        {
+            height: 300px;
+            width: 300px;
+
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child
+        {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+    
+     <!-- <button class="btn1" onclick="mode()">Dark Mode</button> -->
+
+     <button class="btn1 btn">Dark Mode</button>
+
+     <button class="btn2 btn">Click Here twice</button>
+     <button class="btn3 btn">Hover Here</button>
+     <button class="btn4 btn">Leave Mouse from Here</button>
+
+
+     <div class="grandparent">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+     </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
