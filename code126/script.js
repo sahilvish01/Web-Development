@@ -78,18 +78,60 @@ const child = document.querySelector(`.child`);
 // })
 
 
-grandparent.addEventListener(`click`, () => {
-    console.log("Grand parent"); 
-}, true)
+// grandparent.addEventListener(`click`, () => {
+//     console.log("Grand parent"); 
+// }, true)
 
-parent.addEventListener(`click`, () => {
-    console.log("parent"); 
-}, true)
+// parent.addEventListener(`click`, () => {
+//     console.log("parent"); 
+// }, true)
 
-child.addEventListener(`click`, () => {
-    console.log("child"); 
-}, true)
+// child.addEventListener(`click`, () => {
+//     console.log("child"); 
+// }, true)
 
 // Agar Capture phase ture hai to capture phase mein hi addEventListner execute hoga
 
 // Capture phase by default false hi hote hai
+
+const box = document.querySelector(`.box`);
+
+box.addEventListener(`click`, (e) => 
+{
+    console.log(e);             // Object
+    console.log(e.target);      // Jo element triggered hua
+    
+})
+
+
+// Bubbling phase ko rokne ke liye
+
+grandparent.addEventListener(`click`, () => {
+    console.log("Grand parent"); 
+})
+
+parent.addEventListener(`click`, (e) => {
+    console.log("parent"); 
+    e.stopPropagation();
+})
+
+child.addEventListener(`click`, (e) => {
+    console.log("child");
+    
+    e.stopPropagation();
+})
+
+
+const test = document.querySelector(`.test`);
+
+function handleClick()
+{
+    console.log(`clicked`);
+    
+    test.removeEventListener(`click`, handleClick)      // It will remove event listner after 1 click
+
+} 
+
+test.addEventListener(`click`, handleClick);
+
+// test.removeEventListener(`click`, handleClick)
