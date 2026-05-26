@@ -28,6 +28,15 @@ console.log(divAll);
 
 divAll.forEach(val => console.log(val))
 
+// Converting Nodelist and HTML collection to array
+
+let class1arr = [...class1]
+
+let divarr = [...divAll]
+
+console.log(class1arr);
+console.log(divarr);
+
 // h2.innerHTML ->  Ye html tag ko bhi include karta hai
 
 // h2.innerText ->  Ye HTML tag ke andar ke text ko include karta hai uske andar ke tag aur uske content 
